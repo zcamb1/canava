@@ -1,0 +1,7 @@
+Câu ho?i phu´c ta?p, hê? thô´ng thu?c hiê?n truy vâ´n thông qua lê?nh Cypher trong co so? du~ liê?u Neo4j.
+Su? du?ng câu truy vâ´n nhu sau:
+MATCH (d:Document)-[:HAS_PIC]->(p:Pic)
+WHERE p.knox_id = "linh.tam"
+RETURN count(d) AS number_of_documents
+Kê´t qua? truy vâ´n:
+[{'number_of_documents': 2}]

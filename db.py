@@ -1,0 +1,95 @@
+import sqlite3
+import pandas as pd
+
+# Method 1: Basic sqlite3 connection
+def read_sqlite_basic(db_path):
+    # Connect to the database
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    # List all tables
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+    tables = cursor.fetchall()
+    print("Tables in database:", [table[0] for table in tables])
+    
+    # Read data from a specific table
+    table_name = "conversations"  # Replace with actual table name
+    cursor.execute(f"SELECT * FROM {table_name}")
+    rows = cursor.fetchall()
+    
+    # Get column names
+    column_names = [description[0] for description in cursor.description]
+    print("Columns:", column_names)
+    
+    # Close connection
+    conn.close()
+    
+    return rows, column_names
+
+# Method 2: Using pandas (recommended for data analysis)
+def read_sqlite_pandas(db_path):
+    # Connect to database
+    conn = sqlite3.connect(db_path)
+    
+    # Get list of tables
+    tables_query = "SELECT name FROM sqlite_master WHERE type='table';"
+    tables_df = pd.read_sql_query(tables_query, conn)
+    print("Available tables:")
+    print(tables_df)
+    
+    # Read a specific table into DataFrame
+    table_name = "conversations"  # Replace with actual table name
+    df = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
+    
+    # Close connection
+    conn.close()
+    
+    return df
+
+# Method 3: Read all tables
+def read_all_tables(db_path):
+    conn = sqlite3.connect(db_path)
+    
+    # Get all table names
+    cursor = conn.cursor()
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+    tables = [table[0] for table in cursor.fetchall()]
+    
+    # Read each table into a dictionary of DataFrames
+    all_tables = {}
+    for table in tables:
+        all_tables[table] = pd.read_sql_query(f"SELECT * FROM {table}", conn)
+        print(f"Table '{table}' has {len(all_tables[table])} rows")
+    
+    conn.close()
+    return all_tables
+
+# Example usage
+if __name__ == "__main__":
+    db_file = "conversations.db" 
+    
+    try:
+        # Method 1: Basic reading
+        # print("=== Basic SQLite Reading ===")
+        # rows, columns = read_sqlite_basic(db_file)
+        
+        # Method 2: Using pandas
+        print("\n=== Using Pandas ===")
+        df = read_sqlite_pandas(db_file)
+        df_ex = df.explode("messages", ignore_index=True)
+        print(df_ex)
+        df_expanded = pd.concat([df_ex.drop(columns=['messages']), df_ex['messages'].apply(pd.Series)], axis=1)
+        df_ex.to_csv('conversations.csv', index=False)
+        pd.set_option('display.max_columns', None)
+        # print(df_expanded.head())
+        
+        # Method 3: Read all tables
+        print("\n=== All Tables ===")
+        all_data = read_all_tables(db_file)
+        
+    except sqlite3.Error as e:
+        print(f"SQLite error: {e}")
+    except FileNotFoundError:
+        print(f"Database file '{db_file}' not found")
+    except Exception as e:
+        print(f"Error: {e}")

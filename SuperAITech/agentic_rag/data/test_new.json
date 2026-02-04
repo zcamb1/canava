@@ -1,0 +1,138 @@
+[
+    {
+        "Document": {
+            "title": "Chính sách phụ cấp ngoại ngữ",
+            "path": "\\\\107.98.48.222\\1. HR Guide\\1. HR GUIDE\\3. TOEIC-TOPIK(OPICs)"
+        },
+        "Highlight": [
+            "Phụ cấp tiếng Hàn:",
+            "- Mức 3.200.000 VND/tháng: TOPIK 4 hoặc OPIC Intermediate Mid",
+            "- Mức 4.800.000 VND/tháng: TOPIK 5 hoặc OPIC Intermediate High",
+            "- Mức 6.000.000 VND/tháng (vô thời hạn): TOPIK 6 hoặc OPIC Advance",
+            "Phụ cấp tiếng Anh:",
+            "- Level 1: OPIC Intermediate Mid/TOEIC Speaking 130-150 → 3.000.000 VND một lần",
+            "- Level 2: OPIC Intermediate High/TOEIC Speaking 160-180 → 4.000.000 VND một lần",
+            "- Level 3: OPIC Advance/TOEIC Speaking 190-200 → 6.000.000 VND một lần"
+          ],
+        "Role": {
+            "title":"Nhân viên chính thức",
+            "conditions": [
+                "có chứng chỉ TOEIC, OPIC đối với Tiếng Anh", "có chứng chỉ TOPIK, OPIC đối với tiếng Hàn"
+            ]
+        },
+        "Pic": "linh.tam",
+        "Time": {
+            "create_at": "11 tháng 2 năm 2019",
+            "efficient_time": "null"
+        },
+        "Path": "/asr-shared/vi-VN/data/quocanh/HT/wav2vec2/Bot/SimpleRAG/data_new/data_bot_25Aug15/Phụ cấp ngoại ngữ.txt"
+    },
+    {
+        "Document": {
+            "title": "Thủ tục nhận trợ cấp gửi trẻ",
+            "path": "\\\\107.98.48.222\\1. HR Guide\\1. HR GUIDE\\4. TRỢ CẤP GỬI TRẺ_CHILD-MINDING ALLOWANCE"
+        },
+        "Highlight": [
+            "Mức hỗ trợ về trợ cấp gửi trẻ:",
+            "- 150k một quý trên 1 con, 1 tháng là 50k",
+            "- Cụ thể công thức tính là 50K x Số tháng làm việc thực tế x số con",
+            "- Số tháng làm việc thực tế là tháng dương lịch có ít nhất 10 ngày làm việc bình thường kể từ tháng tiếp theo sau tháng có ngày sinh của con",
+            "- Thời gian chi trả trợ cấp trong 1 lần trên 1 quý vào ngày 21 các tháng 1,4,7,10",
+            "Quy trình làm thủ tục trợ cấp gửi trẻ:",
+            "- Nhân viên điền thông tin vào mẫu đơn đăng ký nhận trợ cấp, mẫu đơn bạn lấy tại link \\\\107.98.48.222\\1. HR Guide\\1. HR GUIDE\\4. TRỢ CẤP GỬI TRẺ_CHILD-MINDING ALLOWANCE\\2022.01.01_Form_Trợ Cấp Gửi Trẻ_HR FORM-OFFICIAL_Ver.04.2021_Final.pdf",
+            "- Nộp hồ sơ nhận trợ cấp gửi trẻ cho coordinator bộ phận gồm: 1 bản giấy khai sinh công chứng của sssss(theo số con dưới 6 tuổi) và Form đăng ký nhận trợ cấp gửi trẻ có đủ chữ ký xác nhận của bộ phận.",
+            "- Coordinator so sánh thông tin đăng ký với thông tin trên giấy khai sinh sau đó nộp hồ sơ đăng ký cho HR PIC vào 2 ngày làm việc cuối cùng của tháng",
+            "- Nhân viên nộp đăng ký nhận trợ cấp gửi trẻ trước ngày làm việc cuối cùng của tháng để được hưởng trợ cấp từ tháng đó. Bước 3, HR PIC check form đăng ký sau đó Tổng hợp submit thanh toán cho các trường hợp đủ điều kiện"
+          ],
+        "Role": {
+            "title":"Nhân viên chính thức",
+            "conditions": [
+                "có con dưới 6 tuổi", "đang làm việc bình thường hoặc nghỉ dài ngày tại thời điểm thanh toán, trừ trường hợp chờ sa thải"
+            ]
+        },
+        "Pic": "linh.tam",
+        "Time": {
+            "create_at": "17 tháng 2 năm 2022",
+            "efficient_time": "Quý 1 năm 2022"
+        },
+        "Path": "/asr-shared/vi-VN/data/quocanh/HT/wav2vec2/Bot/SimpleRAG/data_new/data_bot_25Aug15/Hướng dẫn thủ tục nhận trợ cấp gửi trẻ.txt"
+    },
+    {
+        "Document": {
+            "title": "Quy trình sử dụng xe nội bộ 16 chỗ SRV",
+            "path": "\\\\107.113.53.32\\Private\\ASR-Supporting-S24\\quocanh.ph\\QUY TRÌNH SỬ DỤNG XE NỘI BỘ 16 CHỖ SRV.docx"
+        },
+        "Highlight": [
+            "Quy trình sử dụng xe nội bộ 16 chỗ:",
+            "- Vào http://107.113.53.105/car và kiểm tra lịch trình đặt xe",
+            "- Nếu bạn thấy trống lịch, chọn Create Car Request, Nếu lịch bạn muốn đặt đã có người đặt, vui lòng liên hệ với người đặt xe trước đó và lái xe để trao đổi",
+            "- điền đầy đủ các thông tin cần thiết như Mục đích, thời gian, địa điểm, người đi cùng,.. sau đó Submit",
+            "- bạn in phê duyệt và cung cấp cho lái xe. bạn nhấp CTRL + P để in trên chrome/edge",
+            "- bạn liên hệ lái xe để thông báo về lịch đặt xe và báo lại cho PIC (vu.ngat) nếu có thay đổi về lịch trình",
+            "Lưu ý:",
+            "- Nhân viên sử dụng xe đúng theo lịch trình đã đặt, nếu có thay đổi, cần thông báo lại cho lái xe và PIC (vu.ngat)",
+            "- Xe nội bộ 16 chỗ của SRV được sử dụng với mục đích chở người vì vậy không sử dụng xe để chở hàng hóa cồng kềnh, kích thước quá lớn"
+          ],
+        "Role": {
+            "title":"Nhân viên chính thức",
+            "conditions": [
+                "null"
+            ]
+        },
+        "Pic": "vu.ngat",
+        "Time": {
+            "create_at": "null",
+            "efficient_time": "null"
+        },
+        "Path": "/asr-shared/vi-VN/data/quocanh/HT/wav2vec2/Bot/SimpleRAG/data_new/data_bot_25Aug15/Quy trình sử dụng xe nội bộ 16 chỗ SRV.txt"
+    },
+    {
+        "Document": {
+            "title": "Cách làm phê duyệt IT Helpdesk",
+            "path": "\\\\107.98.48.222\\SRV common\\02. SVMC Document Form\\23. Hướng dẫn làm IT helpdesk"
+        },
+        "Highlight": [
+            "Cách làm phê duyệt IT Helpdesk:",
+            "- Bạn hãy truy cập trực tiếp vào đường dẫn http://itvoc.sec.samsung.net/it4u/voc/vocReg?directCode=00000000000004 hoặc bạn truy cập vào http://itvoc.sec.samsung.net",
+            "- Chọn My VOC (Góc trái trên) và chọn VOC Registration, sau đó nó sẽ ra một trang web, Tại đây, hãy nhập Other IT Services (SEV) và hệ thống sẽ dần dần gợi ý ra để bạn click vào nó",
+            "- tại Business Classification bạn chọn SRV IT Services Request và Business Type thì chọn SRV IP helpdesk",
+            "- điền nội dung bản thân cần hỗ trỡ để làm phê duyệt. Cuối cùng hãy submission rồi nhấn registation",
+            "Chú ý:",
+            "- Khi bạn làm phê duyệt IT helpdesk xong, thì vì đây là phê duyệt tự động nên sau khi hoàn thành nó, bạn sẽ không phải làm thêm bất cứ thao tác nào mà chỉ cần đợi kết quả này",
+            "- Kết quả sẽ rơi vào tầm khoảng 1-2 ngày sau ngày bạn submit phê duyệt lên hệ thống"
+          ],
+        "Role": {
+            "title":"Nhân viên chính thức",
+            "conditions": [
+                "null"
+            ]
+        },
+        "Pic": "null",
+        "Time": {
+            "create_at": "null",
+            "efficient_time": "null"
+        },
+        "Path": "/asr-shared/vi-VN/data/quocanh/HT/wav2vec2/Bot/SimpleRAG/data_new/data_bot_25Aug15/Làm phê duyệt IT helpdesk.txt"
+    },
+    {
+        "Document": {
+            "title": "Phúc lợi thai sản",
+            "path": "\\\\107.98.48.222\\1. HR Guide\\2. ER GUIDE\\02. PREGNANCY GUIDE(THAI SAN)"
+        },
+        "Highlight": [
+            ""
+          ],
+        "Role": {
+            "title":"Nhân viên chính thức",
+            "conditions": [
+                "nữ"
+            ]
+        },
+        "Pic": "van.ltt",
+        "Time": {
+            "create_at": "null",
+            "efficient_time": "null"
+        },
+        "Path": "/asr-shared/vi-VN/data/quocanh/HT/wav2vec2/Bot/SimpleRAG/data_new/data_bot_25Aug15/Phúc lợi thai sản.txt"
+    }
+]

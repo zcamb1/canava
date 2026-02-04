@@ -1,0 +1,15 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // This line is crucial for React components
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'], // Add Inter font as used in your UI
+      },
+    },
+  },
+  plugins: [require('@tailwindcss/typography')],
+}

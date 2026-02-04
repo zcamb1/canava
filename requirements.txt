@@ -1,0 +1,42 @@
+# FastAPI and server
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+
+# LangChain ecosystem
+langchain==0.3.13
+langchain-community==0.3.13
+langchain-core==0.3.28
+langchain-huggingface==0.1.2
+langchain-openai==0.2.14
+langchain-ollama==0.2.2
+
+# AI/ML Libraries
+transformers==4.46.3
+torch==2.5.1
+tiktoken==0.8.0
+sentence-transformers==3.3.1
+
+# Vector Database
+faiss-cpu==1.9.0
+# faiss-gpu==1.9.0  # Uncomment if you have GPU
+
+# Graph Database
+neo4j==5.27.0
+
+# LLM Index
+llama-index==0.12.9
+llama-index-embeddings-huggingface==0.4.1
+
+# Utilities
+requests==2.32.3
+markdownify==0.14.1
+pydantic==2.10.4
+python-dotenv==1.0.1
+
+# Database
+sqlite3  # Built-in with Python
+
+# Additional dependencies (if needed)
+numpy==1.26.4
+pandas==2.2.3

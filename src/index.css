@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can keep other global styles below these directives */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
