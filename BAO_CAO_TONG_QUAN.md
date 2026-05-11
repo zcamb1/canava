@@ -1,3 +1,4 @@
+```
 import re
 import json
 from pathlib import Path
@@ -363,3 +364,4 @@ for translated_file in translated_files:
     )
 
 print("\nRENDER DONE")
+```
